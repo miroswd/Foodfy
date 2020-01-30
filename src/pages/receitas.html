@@ -3,6 +3,7 @@
   <head>
     <title>Foodfy</title>
     <link rel="stylesheet" href="../styles/receitas.css" />
+    <link rel="icon" href="../assets/chef-icon.png" type="image/x-icon"/>
   </head>
 
   <body>
@@ -19,17 +20,17 @@
         
         <div id="wrapper">
         <!-- Revenue Starts  -->
-          <div class="revenue">
-            <img src="../assets/burger.png" />
+          <div class="revenue" id="burger">
+            <img src="../assets/burger.png"/>
           <div class="info-revenue">
-            <span class="revenue-name">Triplo Bacon Burguer</span>
+            <span class="revenue-name">Triplo Bacon burger</span>
             <span class="author">por Jorge Relato</span>
           </div>
         </div>
       <!-- Revenue Ends -->
 
       <!-- Revenue Starts  -->
-        <div class="revenue">
+        <div class="revenue" id="pizza">
           <img src="../assets/pizza.png" />
           <div class="info-revenue">
             <span class="revenue-name">Pizza 4 estações</span>
@@ -39,7 +40,7 @@
       <!-- Revenue Ends -->
 
       <!-- Revenue Starts  -->
-        <div class="revenue">
+        <div class="revenue" id="espaguete">
           <img src="../assets/espaguete.png" />
           <div class="info-revenue">
             <span class="revenue-name">Espaguete alho</span>
@@ -49,7 +50,7 @@
       <!-- Revenue Ends -->
 
       <!-- Revenue Starts  -->
-        <div class="revenue">
+        <div class="revenue" id="lasanha">
           <img src="../assets/lasanha.png" />
           <div class="info-revenue">
             <span class="revenue-name">Lasanha mac n' cheese</span>
@@ -59,7 +60,7 @@
       <!-- Revenue Ends -->
 
       <!-- Revenue Starts  -->
-        <div class="revenue">
+        <div class="revenue" id="doce">
           <img src="../assets/doce.png" />
           <div class="info-revenue">
             <span class="revenue-name">Docinhos pão-do-céu</span>
@@ -69,7 +70,7 @@
       <!-- Revenue Ends -->
 
       <!-- Revenue Starts  -->
-        <div class="revenue">
+        <div class="revenue" id="asinhas">
           <img src="../assets/asinhas.png" />
           <div class="info-revenue">
             <span class="revenue-name">Asinhas de frango ao barbecue</span>
@@ -78,90 +79,88 @@
         </div>
       <!-- Revenue Ends -->
         <!-- Revenue Starts  -->
-          <div class="revenue">
-            <img src="../assets/burger.png" />
+          <div class="revenue" id="baiao">
+            <img src="../assets/baiao.png" />
           <div class="info-revenue">
-            <span class="revenue-name">Triplo Bacon Burguer</span>
-            <span class="author">por Jorge Relato</span>
+            <span class="revenue-name">Baião de Dois</span>
+            <span class="author">por Karla Monteiro</span>
           </div>
         </div>
       <!-- Revenue Ends -->
 
       <!-- Revenue Starts  -->
-        <div class="revenue">
-          <img src="../assets/pizza.png" />
+        <div class="revenue" id="churrasco">
+          <img src="../assets/churrasco.png" />
           <div class="info-revenue">
-            <span class="revenue-name">Pizza 4 estações</span>
-            <span class="author">por Fabiana Melo</span>
+            <span class="revenue-name">Churrasco fino</span>
+            <span class="author">por Renato Barbosa</span>
           </div>
         </div>
       <!-- Revenue Ends -->
 
       <!-- Revenue Starts  -->
-        <div class="revenue">
-          <img src="../assets/espaguete.png" />
+        <div class="revenue" id="sushi">
+          <img src="../assets/sushi.png" />
           <div class="info-revenue">
-            <span class="revenue-name">Espaguete alho</span>
-            <span class="author">por Júlia Kinoto</span>
+            <span class="revenue-name">Sushique</span>
+            <span class="author">por Takama Sanomuro</span>
           </div>
         </div>
       <!-- Revenue Ends -->
 
       <!-- Revenue Starts  -->
-        <div class="revenue">
-          <img src="../assets/lasanha.png" />
+        <div class="revenue" id="yakisoba">
+          <img src="../assets/yakisoba.png" />
           <div class="info-revenue">
-            <span class="revenue-name">Lasanha mac n' cheese</span>
-            <span class="author">por Juliano Vieira</span>
+            <span class="revenue-name">Yakisoba de carne</span>
+            <span class="author">por Roberta Iuky</span>
           </div>
         </div>
       <!-- Revenue Ends -->
 
       <!-- Revenue Starts  -->
-        <div class="revenue">
-          <img src="../assets/doce.png" />
+        <div class="revenue" id="parmegiana">
+          <img src="../assets/parmegiana.png" />
           <div class="info-revenue">
-            <span class="revenue-name">Docinhos pão-do-céu</span>
-            <span class="author">por Ricardo Golvea</span>
+            <span class="revenue-name">Filé de frango à parmegiana</span>
+            <span class="author">por Carine Correa</span>
           </div>
         </div>
       <!-- Revenue Ends -->
 
       <!-- Revenue Starts  -->
-        <div class="revenue">
-          <img src="../assets/asinhas.png" />
+        <div class="revenue" id="taco">
+          <img src="../assets/taco.png" />
           <div class="info-revenue">
-            <span class="revenue-name">Asinhas de frango ao barbecue</span>
-            <span class="author">por Vania Steroski</span>
+            <span class="revenue-name">Taco mexicano</span>
+            <span class="author">por Tatiana Rojas</span>
           </div>
         </div>
       <!-- Revenue Ends -->
      
       </div>
     </section>
+  </div>
 
     <div class="modal-overlay">
-        <div class="container">
-        <div class="modal-back"></div>
-
-        <div class="modal-content">
-            <img src="../assets/asinhas.png" alt="asinhas"/>
-            <div class="modal-info">
-                <span>Asinhas de frango ao barbecue</span>
-                <span class="author">por Vania Steroski</span>
-            </div>
-            <button>Fechar</button>
-        </div>
+        <div class="modal">
+          <div class="modal-content">
+              <img src="" alt="asinhas"/>
+              <div class="modal-info">
+                  <span class="revenue-name">Asinhas de frango ao barbecue</span>
+                  <span class="author">por Vania Steroski</span>
+              </div>
+              <button id="close-modal">Fechar</button>
+          </div>
         </div>
     </div>
-  </div>
 
     <footer>
       <div>
-      <span>Todos os direitos reservados, receitas Foodfy.</span>
+      <span>Todos os direitos reservados, receitas Foodfy.</br>github/miroswd</span>
     </div>
     </footer>
   </body>
 
-  <script src="scripts/script.js"></script>
+  <script src="../scripts/script.js"></script>
 </html>

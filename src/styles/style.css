@@ -122,12 +122,6 @@ header #logo{
   border-radius: 20px;
 }
 
-#most-accessed .revenue img:hover {
-  transition: 200ms;
-  cursor: pointer;
-  box-shadow: 0 2px 10px 5px #00000030;
-}
-
 #most-accessed #wrapper .revenue .info-revenue {
   display: grid;
 }
@@ -150,7 +144,7 @@ header #logo{
 /* === FOOTER === */
 footer {
   width: 100%;
-  margin-top: 70px;
+  margin-top: 10vh;
   
   padding: 31px 0;
   background-color: #eee;

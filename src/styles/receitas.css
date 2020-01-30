@@ -109,42 +109,86 @@ header #logo{
 /*  === MODAL === */
 
 .modal-overlay {
+  background-color: rgba(0,0,0,0.6);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top:0;
+  
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal-overlay.active {
+    background-color: rgba(0,0,0,0.6);
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.6);
     position: fixed;
-    top: 0;
-    right: 0;
+    top:0;
+    
+    opacity: 1;
+    visibility: visible;
 }
+  
+.modal {
+  width: 500px;
+  height: 360px;
 
-.modal-overlay .modal-back {
-    width: 660px;
-    height: 413px;
-    background-color: #fff;
-    position: fixed;
-    text-align: center;
-    margin: 0 auto;
-}
+  margin:30vh auto;
+  padding: 30px;
+  
+  position: relative;
 
-.modal-content  {
-    position: absolute;
-    display: grid;
-    grid-template-columns: 1fr;
-    text-align: center;
-    gap:50;
+  background-color: #fff;
+  border-radius: 20px;
+  text-align: center;
 }
 
 .modal-content img {
-    width: 600px;
-    height: 200px;
-    border-radius: 20px;
+  width: 500px;
+  height: 200px;
+  
+  border-radius: 20px;
 }
 
+.modal-info {
+  margin-top: 20px;
+  display: grid;
+}
+
+.modal-info span {
+  font-family: 'Roboto', sans-serifs;
+  color: #111111;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.modal-info .author {
+  color:#777777;
+  font-size: 18px;
+  line-height: 21px;
+  margin-top: 10px;
+  font-weight: 300;
+}
+
+#close-modal {
+  margin: 70px auto;
+  text-align: center;
+  border: 0;
+  background-color: transparent;
+  color:#999999;
+  outline: 0;
+}
+
+#close-modal:hover {
+  color: #777;
+  cursor: pointer;
+}
 
 /* === FOOTER === */
 footer {
   width: 100%;
-  margin-top: 70px;
+  margin-top: 10vh;
   
   padding: 31px 0;
   background-color: #eee;
@@ -152,7 +196,7 @@ footer {
   
   color: #999999;
   font-size: 18px;
-  line-height: 16px;
+  line-height: 28px;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   bottom:0;
