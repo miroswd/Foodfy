@@ -6,7 +6,7 @@
   border: 0;
 }
 
-body #container{
+.container{
   max-width: 940px;
   margin: 0 auto;
 
@@ -54,46 +54,6 @@ header #logo{
   font-weight: bold;
 }
 
-
-/* === BESTS REVENUES === */
-
-#bests-revenues {
-  width:100%;
-  height: 366px;
-  margin-top: 30px;
-  
-  background-color: #FBDFDB;
-  border-radius: 20px;
-
-  position: relative;
-}
-
-#bests-revenues h2 {
-  font-size: 32px;
-  font-weight: bold;
-  position: absolute;
-  top:33%;
-  left:50px;
-}
-
-#bests-revenues p {
-  width:315px;
-
-  font-size: 18px;
-  line-height: 28px;
-  opacity: 70%;
-  font-weight: 300;
-
-  position: absolute;
-  top:46%;
-  left: 50px;
-}
-
-#bests-revenues #chef {
-  position: absolute;
-  right: 100px;
-  bottom:0;
-}
 
 /* === MOST ACCESSED === */
 
@@ -144,6 +104,40 @@ header #logo{
   line-height: 16px;
   font-size: 14px;
   font-weight: 400;
+}
+
+/*  === MODAL === */
+
+.modal-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.modal-overlay .modal-back {
+    width: 660px;
+    height: 413px;
+    background-color: #fff;
+    position: fixed;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.modal-content  {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap:50;
+}
+
+.modal-content img {
+    width: 600px;
+    height: 200px;
+    border-radius: 20px;
 }
 
 

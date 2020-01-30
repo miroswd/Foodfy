@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   border: 0;
+  outline: 0;
 }
 
 body #container{
@@ -85,7 +86,7 @@ header #logo{
 /* === FOOTER === */
 footer {
   width: 100%;
-  margin-top: 250px;
+  margin-top: 70px;
   
   padding: 31px 0;
   background-color: #eee;
@@ -96,6 +97,6 @@ footer {
   line-height: 16px;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  top:100%;
-  position:absolute;
+  bottom: 0;
+  position:relative;
 }
