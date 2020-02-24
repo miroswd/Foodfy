@@ -8,11 +8,15 @@
 }
 
 body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
   max-width: 940px;
   margin: 0 auto;
- 
-  font-family: 'Roboto', sans-serif;
-}
+ }
 
 /* HEADER */
 
@@ -74,10 +78,10 @@ header {
   height: 258px;
 
   color: #111;
-  opacity: 70%;
+  opacity: 0.7;
   font-size: 18px;
   line-height: 28px;
-  font-weight: 600;
+  font-weight: 400;
   
 }
 
@@ -90,7 +94,7 @@ header {
 /*Recipe List*/
 
 .most-accessed {
-  margin-top: 40px;
+  margin: 40px auto;
 }
 
 .most-accessed h1{
@@ -132,9 +136,9 @@ header {
 }
 
 footer {
-  margin-top: 4.5%;
+  margin-top: auto;
   width: 100%;
-  padding: 2%;
+  padding: 20px;
   
   background-color: #eee;
   color:#999;
