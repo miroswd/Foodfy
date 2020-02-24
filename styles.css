@@ -129,13 +129,13 @@ header {
   margin: 40px auto;
 }
 
-
-
 /*--- RECIPES ---*/
 
 .recipe-list {
+  margin-bottom: 40px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap:18px;
 }
 
 .recipe {
@@ -146,6 +146,11 @@ header {
   width: 300px;
   height: 140px;
   border-radius: 10px;
+}
+
+.recipe img:hover {
+  cursor: pointer;
+  box-shadow: 5px 5px 20px 1px rgba(0, 0, 0, 0.4);
 }
 
 .info {
@@ -176,4 +181,73 @@ footer {
   line-height: 16px;
 
   text-align: center;
+}
+
+
+/* ---- MODAL ---- */
+
+.modal-overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top:0;
+  text-align: center;
+  background-color: rgba(0,0,0,0.6);
+
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal {
+  margin: 380px auto;
+  
+  width: 660px;
+  height: 495px;
+
+  padding: 30px;
+
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.modal img {
+  width: 600px;
+  height: 280px;
+  border-radius: 10px;
+}
+
+.modal .recipe-name{
+  color: #111;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.modal .author {
+  margin-top: 5px;
+  columns: #777777;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.modal .close-modal {
+  margin-top: 80px;  
+  
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  
+  color: #999999;
+
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.modal .close-modal:hover{
+  color: #777;
+}
+
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
 }
