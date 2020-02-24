@@ -26,7 +26,6 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   text-align: left;
-
 }
 
 .logo {
@@ -48,6 +47,10 @@ header {
 
 .menu a:hover{
   color: #666;
+}
+
+.menu #link {
+  font-weight: 600;
 }
 
 /* BANNER */
@@ -93,15 +96,42 @@ header {
 
 /*Recipe List*/
 
-.most-accessed {
+.most-accessed, .about {
   margin: 40px auto;
 }
 
-.most-accessed h1{
+.most-accessed h1, .about h1{
   color: #111;
   font-size: 24px;
+  line-height: 28px;
   font-weight: 600;
 }
+
+/* --- ABOUT --- */
+.about h2 {
+  margin-top: 80px;
+  color: #111;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.paragraph {
+  width: 940px;
+  height: 280px;
+
+  color:#444444;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.paragraph p {
+  margin: 40px auto;
+}
+
+
+
+/*--- RECIPES ---*/
 
 .recipe-list {
   display: grid;
