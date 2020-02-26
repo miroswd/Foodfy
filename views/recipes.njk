@@ -1,0 +1,34 @@
+{% extends "layout.njk" %}
+{% block head %}
+    <title>Receitas</title>
+{% endblock head %}
+    
+{% block content %}
+    <main>          
+      <div class="recipe-list">
+        <!--Receita 1-->
+        {% for recipe in recipes %}
+        <div class="recipe" id="{{recipe.title}}">
+            <img src="{{recipe.image}}" alt="{{recipe.title}}">
+            <div class="info">
+              <p class="recipe-name">{{recipe.title}}</p>
+              <p class="author">por {{recipe.author}}</p>            
+            </div>
+          </div>
+        {% endfor %}
+    </main>
+      </div>
+
+  {# <div class="modal-overlay">
+    <div class="modal">
+      <!-- Modal em si -->
+      <img src="{{r}}" alt="asinhas">
+      <div class="info">
+        <p class="recipe-name">Asinhas de frango ao barbecue</p>
+        <p class="author">por Vania Steroski</p>
+        <button class="close-modal">Fechar modal</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script> #}
+{% endblock content %}

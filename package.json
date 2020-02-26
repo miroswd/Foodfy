@@ -1,0 +1,20 @@
+{
+  "name": "Foodfy",
+  "version": "1.0.0",
+  "description": "<h1>Foodfy</h1> <p>Projeto referente aos estudos de desenvolvimento web, do bootcamp <a href=\"https://rocketseat.com.br/launchbase\">Launchbase</a>, da <a href=\"https://rocketseat.com.br\">Rocketseat</a></p>",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miroswd/Foodfy.git"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.0"
+  }
+}

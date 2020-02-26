@@ -26,3 +26,9 @@
 <p style="text-align:center">
   <img src="https://github.com/miroswd/Foodfy/blob/master/assets/recipe-modal.png" alt="recipe-modal">
 </p>
+
+<h6>Not found</h6>
+<p style="text-align:center">
+  <img src="https://github.com/miroswd/Foodfy/blob/master/assets/not-found.png" alt="recipe-modal">
+</p>
+
