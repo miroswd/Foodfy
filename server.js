@@ -29,12 +29,13 @@ server.get('/recipes', function(req,res){
 server.get('/recipes/:id',function(req,res){
   const id = req.params.id
   
-  // Encontrar no array, a receita
-  const recipe = data.find(function(recipe){
-     if (recipe.id == id){
-       return true
-     }
-  })
+  // // Encontrar no array, a receita
+  // const recipe = data.find(function(recipe){
+  //    if (recipe.id == id){
+  //      return true
+  //    }
+  // })
+  const recipe = data[id]
     if (!recipe){
       return res.status(404).render('not-found')
     }

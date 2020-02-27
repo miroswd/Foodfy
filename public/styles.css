@@ -254,6 +254,92 @@ main {
   margin-bottom: 40px;
 }
 
+
+
+
+
+
+/*=== DESCRIPTION === */
+
+main.description{
+  color: #111;
+}
+
+main h1 {
+  margin:45px 0 20px ;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 600;
+}
+
+main p, li {
+  color: #444444;
+}
+
+.topic button {
+  margin-top: -37px;
+  padding: 0;
+  border: none;
+  
+  background-color: #fff;
+
+  text-align: right;
+  color: #999999;
+  
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.apresentation {
+  text-align: center;
+}
+
+.apresentation img {
+  width: 940px;
+  height: 280px;
+  background-color: #ddd;
+  border-radius: 20px;
+}
+
+.apresentation h1 {
+  margin-top:45px;
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 600;
+}
+
+.apresentation p {
+  margin-top: -15px;
+  color: #777777;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.ingredients button {
+  margin-left: 150px;
+}
+
+.ingredients li{
+  margin-top: 5px;
+}
+
+.preparation button{
+  margin-left: 195px;
+}
+
+.information button{
+  margin-left: 270px;
+
+}
+
+
+
+
+
 /* === FOOTER === */
 footer {
   margin-top: auto;

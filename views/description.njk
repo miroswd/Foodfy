@@ -1,33 +1,56 @@
 {% extends "layout.njk" %}
+
+{# HEAD #}
 {% block head %}
     <title>{{recipe.title}}</title>
 {% endblock %}
   
-  
-
+{# CONTENT #}
 {% block content %}
-      <main>
+   <main class="description">
+      
+      {# -- APRESENTATION -- #}
+      <div class="apresentation">
          <img src="{{recipe.image}}" alt="{{recipe.id}}">
          <h1>{{recipe.title}}</h1>
-         <p>{{recipe.author}}</p>
-        
-         <h1>Ingredientes</h1>
+         <p>por {{recipe.author}}</p>
+      </div>
+
+      {# -- INGREDIENTS -- #}
+      <div class="ingredients">
+         <div class="topic">
+            <h1>Ingredientes</h1>
+            <button>ESCONDER</button>
+         </div>
          <ul>
             {% for ing in recipe.ingredients %}
-            <li>{{ing}}</li>
+               <li>{{ing}}</li>
             {% endfor %}
          </ul>
+      </div>
 
-         <h1>Modo de preparo</h1>
+      {# -- PREPARATION -- #}
+      <div class="preparation">
+         <div class="topic">
+            <h1>Modo de preparo</h1>
+            <button>ESCONDER</button> {# Precisa virar mostrar#}
+         </div>
+         
          {% for prep in recipe.preparation %}
-            <p>{{prep}}</p>
+            <p class="preparation">{{prep}}</p>
          {% endfor %}
-        
+      </div>
+      
+      {# -- INFORMATION #}
+      <div class="information">
          {% if recipe.information %}
-         <h1>Informações adicionais</h1>
-         <p>{{recipe.information}}</p>
+            <div class="topic">
+               <h1>Informações adicionais</h1>
+               <button>ESCONDER</button>
+            </div>
+            <p class="information">{{recipe.information}}</p>
          {% endif %}
+      </div>
 
-      </main>
-    </div>
+   </main>
 {% endblock content %}
