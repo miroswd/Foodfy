@@ -8,7 +8,7 @@
       <div class="recipe-list">
         <!--Receita 1-->
         {% for recipe in recipes %}
-        <div class="recipe" id="{{recipe.title}}">
+        <div class="recipe" id="{{recipe.id}}">
             <img src="{{recipe.image}}" alt="{{recipe.title}}">
             <div class="info">
               <p class="recipe-name">{{recipe.title}}</p>
@@ -17,7 +17,7 @@
           </div>
         {% endfor %}
     </main>
-      </div>
+  </div>
 
   {# <div class="modal-overlay">
     <div class="modal">
@@ -29,6 +29,6 @@
         <button class="close-modal">Fechar modal</button>
       </div>
     </div>
-  </div>
-  <script src="script.js"></script> #}
+  </div>#}
+  <script src="script.js"></script>
 {% endblock content %}

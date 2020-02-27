@@ -145,7 +145,6 @@ header {
 /*--- RECIPES ---*/
 
 .recipe-list {
-  margin-bottom: 40px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap:18px;
@@ -182,20 +181,6 @@ header {
   font-size: 14px;
   line-height: 24px;
 }
-
-footer {
-  margin-top: auto;
-  width: 100%;
-  padding: 20px;
-  
-  background-color: #eee;
-  color:#999;
-  font-size: 14px;
-  line-height: 16px;
-
-  text-align: center;
-}
-
 
 /* ---- MODAL ---- */
 
@@ -263,4 +248,22 @@ footer {
 .modal-overlay.active {
   opacity: 1;
   visibility: visible;
+}
+
+main {
+  margin-bottom: 40px;
+}
+
+/* === FOOTER === */
+footer {
+  margin-top: auto;
+  width: 100%;
+  padding: 20px;
+  
+  background-color: #eee;
+  color:#999;
+  font-size: 14px;
+  line-height: 16px;
+
+  text-align: center;
 }
