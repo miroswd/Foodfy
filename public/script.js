@@ -11,7 +11,7 @@ for (let recipe of recipes){
 
 // Esconder/Mostrar
 const ingredients = document.querySelector('ul.ingredients')
-const preparation = document.querySelector('p.preparation')
+const preparation = document.querySelector('.paragraphs')
 const information = document.querySelector('p.information')
 
 

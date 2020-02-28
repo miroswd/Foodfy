@@ -85,7 +85,7 @@ header {
   font-size: 18px;
   line-height: 28px;
   font-weight: 400;
-  
+
 }
 
 .banner img {
@@ -158,6 +158,7 @@ header {
   width: 300px;
   height: 140px;
   border-radius: 10px;
+  background-color: #ddd;
 }
 
 .recipe img:hover {
@@ -198,7 +199,7 @@ header {
 
 .modal {
   margin: 380px auto;
-  
+
   width: 660px;
   height: 495px;
 
@@ -228,12 +229,12 @@ header {
 }
 
 .modal .close-modal {
-  margin-top: 80px;  
-  
+  margin-top: 80px;
+
   background-color: #fff;
   border: none;
   cursor: pointer;
-  
+
   color: #999999;
 
   font-size: 16px;
@@ -251,12 +252,8 @@ header {
 }
 
 main {
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
-
-
-
-
 
 
 /*=== DESCRIPTION === */
@@ -266,7 +263,7 @@ main.description{
 }
 
 main h1 {
-  margin:45px 0 20px ;
+  margin: 20px 0 20px;
   font-size: 24px;
   line-height: 28px;
   font-weight: 600;
@@ -280,12 +277,12 @@ main p, li {
   margin-top: -37px;
   padding: 0;
   border: none;
-  
+
   background-color: #fff;
 
   text-align: right;
   color: #999999;
-  
+
   font-size: 12px;
   line-height: 14px;
   font-weight: 600;
@@ -319,11 +316,11 @@ main p, li {
   font-weight: 400;
 }
 
+
 .ingredients {
   opacity: 1;
   visibility: visible;
-  transition-duration: 0.3s;
-
+  transition-duration: 0.2s;
 }
 
 .ingredients button {
@@ -334,44 +331,47 @@ main p, li {
   margin-top: 5px;
 }
 
-.preparation {
+.paragraphs {
   opacity: 1;
   visibility: visible;
+  transition-duration:0.1s;
 }
 
-.preparation button{
+.preparation button {
   margin-left: 195px;
 }
 
 .information {
   opacity: 1;
   visibility: visible;
+  transition-duration:0.1s;
 }
 
-.information button{
+.information button {
   margin-left: 270px;
-
 }
 
 
 /* --- HIDE/SHOW ---*/
 
 ul.ingredients.hide {
-  margin-bottom: -300px;
   opacity: 0;
-  visibility: hidden;
+  visibility: hidden; 
+  height:0;
 }
 
-p.preparation.hide {
-  /* margin-bottom: -25px; */
+
+.paragraphs.hide {
   opacity: 0;
-  visibility: hidden;
+  visibility: hidden; 
+  height:0;
 }
 
 
 p.information.hide {
   opacity: 0;
-  visibility: hidden;
+  visibility: hidden; 
+  height:0;
 }
 
 
@@ -380,7 +380,7 @@ footer {
   margin-top: auto;
   width: 100%;
   padding: 20px;
-  
+
   background-color: #eee;
   color:#999;
   font-size: 14px;
