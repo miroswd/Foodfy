@@ -16,41 +16,44 @@
          <p>por {{recipe.author}}</p>
       </div>
 
-      {# -- INGREDIENTS -- #}
-      <div class="ingredients">
-         <div class="topic">
-            <h1>Ingredientes</h1>
-            <button>ESCONDER</button>
+      <div class="step-by-step">
+         {# -- INGREDIENTS -- #}
+         <div class="ingredients">
+            <div class="topic">
+               <h1>Ingredientes</h1>
+               <button id="ingredients-button">ESCONDER</button>
+            </div>
+            <ul class="ingredients">
+               {% for ing in recipe.ingredients %}
+                  <li>{{ing}}</li>
+               {% endfor %}
+            </ul>
          </div>
-         <ul>
-            {% for ing in recipe.ingredients %}
-               <li>{{ing}}</li>
-            {% endfor %}
-         </ul>
-      </div>
 
-      {# -- PREPARATION -- #}
-      <div class="preparation">
-         <div class="topic">
-            <h1>Modo de preparo</h1>
-            <button>ESCONDER</button> {# Precisa virar mostrar#}
+         {# -- PREPARATION -- #}
+         <div class="preparation">
+            <div class="topic">
+               <h1>Modo de preparo</h1>
+               <button id="preparation-button">ESCONDER</button> {# Precisa virar mostrar#}
+            </div>
+            <div class="paragrahps">
+               {% for prep in recipe.preparation %}
+                  <p class="preparation">{{prep}}</p>
+               {% endfor %}
+            </div>
          </div>
          
-         {% for prep in recipe.preparation %}
-            <p class="preparation">{{prep}}</p>
-         {% endfor %}
+         {# -- INFORMATION #}
+         <div class="information">
+            {% if recipe.information %}
+               <div class="topic">
+                  <h1>Informações adicionais</h1>
+                  <button id="information-button">ESCONDER</button>
+               </div>
+               <p class="information">{{recipe.information}}</p>
+            {% endif %}
+         </div>
       </div>
-      
-      {# -- INFORMATION #}
-      <div class="information">
-         {% if recipe.information %}
-            <div class="topic">
-               <h1>Informações adicionais</h1>
-               <button>ESCONDER</button>
-            </div>
-            <p class="information">{{recipe.information}}</p>
-         {% endif %}
-      </div>
-
    </main>
+   <script src="/script.js"></script>
 {% endblock content %}

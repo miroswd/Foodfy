@@ -47,6 +47,6 @@ server.use(function(req,res){
 })
 
 
-server.listen(5000,function(){
+server.listen(3333,function(){
   console.log('Servidor rodando')
 })

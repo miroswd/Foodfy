@@ -319,6 +319,13 @@ main p, li {
   font-weight: 400;
 }
 
+.ingredients {
+  opacity: 1;
+  visibility: visible;
+  transition-duration: 0.3s;
+
+}
+
 .ingredients button {
   margin-left: 150px;
 }
@@ -327,8 +334,18 @@ main p, li {
   margin-top: 5px;
 }
 
+.preparation {
+  opacity: 1;
+  visibility: visible;
+}
+
 .preparation button{
   margin-left: 195px;
+}
+
+.information {
+  opacity: 1;
+  visibility: visible;
 }
 
 .information button{
@@ -337,7 +354,25 @@ main p, li {
 }
 
 
+/* --- HIDE/SHOW ---*/
 
+ul.ingredients.hide {
+  margin-bottom: -300px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+p.preparation.hide {
+  /* margin-bottom: -25px; */
+  opacity: 0;
+  visibility: hidden;
+}
+
+
+p.information.hide {
+  opacity: 0;
+  visibility: hidden;
+}
 
 
 /* === FOOTER === */
